@@ -12,8 +12,8 @@ app.use(session({
 	secret: process.env.MY_SECRET,
   cookie: {
     // this is why you should never set this to false
-    httpOnly: false,
-    secure: false
+    // httpOnly: false,
+    // secure: false
   }
 }));
 

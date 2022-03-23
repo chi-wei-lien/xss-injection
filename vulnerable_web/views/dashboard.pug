@@ -17,11 +17,12 @@ html
             label(for="pic") pic:
                 input(type="text" id="pic" name="pic")
             input(type="submit" value="Share this Pic")
-        each card in cards
-            .card(style="width: 18rem;")
-                img.card-img-top(src!=card.pic)
-                .card-body
-                    h5.card-title #{card.title}
-                    p.card-text #{card.subtitle}
-                    //- a(href="#" class="btn btn-primary") go 
+        .card-columns
+            each card in cards
+                .card
+                    img.card-img-top(style="height: auto; width:300px" src!=card.pic)
+                    .card-body
+                        h5.card-title #{card.title}
+                        p.card-text #{card.subtitle}
+                        //- a(href="#" class="btn btn-primary") go 
 
