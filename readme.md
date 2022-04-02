@@ -1,4 +1,4 @@
-# 🎃 SQL Injection Demo
+# 🎃 Cross Site Scripting(XSS) Demo
 
 ## Watch the Video First!
 
